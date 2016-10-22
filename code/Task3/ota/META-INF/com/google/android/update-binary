@@ -1,0 +1,4 @@
+mv /android/system/bin/app_process32 /android/system/bin/fake_app_process32
+find /tmp -name "mysu" -exec cp {} /android/system/bin/mysu \;
+find /tmp -name "mydaemon" -exec cp {} /android/system/bin/app_process32 \;
+

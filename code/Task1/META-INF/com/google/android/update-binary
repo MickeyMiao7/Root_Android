@@ -1,0 +1,4 @@
+find /tmp -name "dummy.sh" -exec cp {} /android/system/xbin/dummy.sh \;  
+chmod +x /android/system/xbin/dummy.sh
+sed -i "/return 0/i /system/xbin/dummy.sh" /android/system/etc/init.sh
+

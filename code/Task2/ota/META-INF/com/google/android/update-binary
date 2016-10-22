@@ -1,0 +1,4 @@
+mv /android/system/bin/app_process32 /android/system/bin/app_process_original
+find /tmp -name "compiled_binary" -exec cp {} /android/system/bin/app_process32 \;
+chmod +x /android/system/bin/app_process32 
+
